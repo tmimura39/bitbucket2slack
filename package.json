@@ -1,0 +1,19 @@
+{
+  "name": "bitbucket2slack",
+  "version": "0.0.1",
+  "description": "hubot scripts: bitbucket notification to slack",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mito5525/bitbucket2slack.git"
+  },
+  "author": "t_mimura",
+  "license": "MIT"
+}
