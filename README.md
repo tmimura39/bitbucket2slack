@@ -6,7 +6,7 @@ This Hubot script supports all movements of Bitbucket!!
 - Repository Events
     + Push
     + Fork
-- Pullrequest Ebents
+- Pullrequest Events
     + Created
     + Updated
     + Approved
