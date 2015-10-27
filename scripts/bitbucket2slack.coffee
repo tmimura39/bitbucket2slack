@@ -33,7 +33,7 @@ module.exports = (robot) ->
         when "pullrequest:comment_created", "pullrequest:comment_updated", "pullrequest:comment_deleted" then color = "warning"
 
         when "issue:created", "issue:updated"
-          if body.changes.status?.old?
+          if body.changes?.status?.old?
             fields.push(
               title: "ChangeStatus"
               value: "[#{body.changes.status.old.toUpperCase()}] => [#{body.changes.status.new.toUpperCase()}]"
