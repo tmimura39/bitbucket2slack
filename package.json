@@ -1,6 +1,6 @@
 {
   "name": "bitbucket2slack",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "hubot scripts: bitbucket notification to slack",
   "main": "index.coffee",
   "scripts": {
@@ -8,7 +8,9 @@
   },
   "keywords": [
     "hubot",
-    "hubot-scripts"
+    "hubot-scripts",
+    "bitbucket",
+    "slack"
   ],
   "repository": {
     "type": "git",

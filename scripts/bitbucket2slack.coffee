@@ -110,7 +110,7 @@ module.exports = (robot) ->
         msg =
           channel: destination
           username: body.repository.full_name
-          icon_url: "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2015/Sep/09/1315830652-8-bitbucket-avatar.png"
+          icon_url: "https://raw.githubusercontent.com/mito5525/bitbucket2slack/master/icon/bitbucket.png"
           content:
             text: "#{action.toUpperCase()}: #{event} by #{body.actor.display_name}"
             fallback: "#{action.toUpperCase()}: #{event} by #{body.actor.display_name}"
