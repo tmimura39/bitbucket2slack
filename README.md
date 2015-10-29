@@ -60,6 +60,18 @@ destination is {CHANNELS or PRIVATE_GROUP or DM(user_name)}
 
 ### Option to change the slack attachments colors
 
+|Action|Type|defaultColor|
+|:-----|:--:|:----------:|
+|Pullrequest Create|information|LightBlue|
+|Pullrequest Approved|good|Green|
+|Pullrequest Approval Removed|danger|Red|
+|Pullrequest Merged|good|Green|
+|Pullrequest Declined|danger|Red|
+|Pullrequest Comment...|warning|Orange|
+|Issue ...|information|LightBlue|
+|Repository Push|information|LightBlue|
+|Repository Fork|information|LightBlue|
+
 - Get params(**priority**)  
 `http:example.com:8080/bitbucket2slack?good_color=000000`  
 `http:example.com:8080/bitbucket2slack?warning_color=ff0000&danger_color=f0f`  
