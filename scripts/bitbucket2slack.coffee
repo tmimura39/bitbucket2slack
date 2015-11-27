@@ -83,8 +83,8 @@ module.exports = (robot) ->
       if body.pullrequest?
         title = body.pullrequest.title
         title_link = body.pullrequest.links.html.href
-        reviewers = body.pullrequest.reviewers.map (r) -> " #{r.display_name}"
-        notifications = [body.pullrequest.author.display_name].concat(reviewers)
+        reviewers = body.pullrequest.reviewers.map (r) -> " #{r.username}"
+        notifications = [body.pullrequest.author.username].concat(reviewers)
         unless body.comment?.content?
           fields.push(
             title: "Description"
@@ -112,8 +112,8 @@ module.exports = (robot) ->
           username: body.repository.full_name
           icon_url: "https://raw.githubusercontent.com/mito5525/bitbucket2slack/master/icon/bitbucket.png"
           content:
-            text: "#{action.toUpperCase()}: #{event} by #{body.actor.display_name}"
-            fallback: "#{action.toUpperCase()}: #{event} by #{body.actor.display_name}"
+            text: "#{action.toUpperCase()}: #{event} by #{body.actor.username}"
+            fallback: "#{action.toUpperCase()}: #{event} by #{body.actor.username}"
             color: color
             title: title
             title_link: title_link
